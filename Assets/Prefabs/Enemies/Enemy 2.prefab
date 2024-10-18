@@ -210,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _baseDamage: 1
   _maxHealth: 1
+  _enemyAttackSeconds: 3000
 --- !u!114 &-4291613785230455151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: -8617259788369074650}
-  _moveSpeed: 1
+  _moveSpeed: 2.2
+  _stopingDistance: 0.5
 --- !u!50 &-8617259788369074650
 Rigidbody2D:
   serializedVersion: 4

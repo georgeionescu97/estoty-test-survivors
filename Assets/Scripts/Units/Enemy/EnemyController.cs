@@ -7,6 +7,7 @@ namespace Units
 {
     public class EnemyController : Unit, IEnemyController
     {
+        [SerializeField, Tooltip("Time in miliseconds between the enemy attacks.")] private int _enemyAttackSeconds = 3000;
         private CancellationTokenSource _cancellationTokenSource;
         private bool _isAtTrigger = false;
 
@@ -34,7 +35,6 @@ namespace Units
                 if (_cancellationTokenSource.IsCancellationRequested) return;
                 unit.OnTakeDamage(this);
                 Debug.Log($"{unit.Model.Health}");
-
             }
         }
 
