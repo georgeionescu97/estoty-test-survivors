@@ -45,7 +45,7 @@ namespace Spawners
 
         public override void Spawn()
         {
-            float spawnX = Random.value > 0.5f ? Random.Range(-0.5f, -1.1f) : Random.Range(1.1f, 1.5f);
+            float spawnX = Random.value > 0.5f ? Random.Range(-0.8f, -1.5f) : Random.Range(1.5f, 2f);
 
             float spawnY = Random.Range(-1f, 1f);
             Vector3 spawnPosition = mainCamera.ViewportToWorldPoint(new Vector3(spawnX, spawnY, spawnDistance));

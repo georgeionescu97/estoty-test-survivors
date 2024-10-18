@@ -25,6 +25,5 @@ namespace Units
         {
             _eventsContainer.OnUnitDied.RemoveListener(OnUnitDied);
         }
-
     }
 }

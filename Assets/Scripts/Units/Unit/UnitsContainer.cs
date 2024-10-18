@@ -42,15 +42,6 @@ namespace Units
             _units.RemoveAll(u => u is T);
         }
 
-        public void DestroyUnits<T>() where T : Unit
-        {
-            var units = GetUnits<T>();
-            foreach (var unit in units)
-            {
-                Object.Destroy(unit.gameObject);
-            }
-        }
-
         public int GetUnitCount<T>() where T : Unit
         {
             return GetUnits<T>().Count();

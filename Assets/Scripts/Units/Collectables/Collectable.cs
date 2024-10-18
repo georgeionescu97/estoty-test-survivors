@@ -15,7 +15,7 @@ namespace Units
         {
             if (unit == this)
             {
-                Destroy(gameObject);  // Here i should implement same ObjectPooling principle, with a spawner but i didn't had time
+                Destroy(gameObject);  // Here i should implement same ObjectPooling principle with a spawner but i didn't had time
                                       // I just want to point out that i can scale the current Unit implementation
             }
         }

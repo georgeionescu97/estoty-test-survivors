@@ -34,7 +34,6 @@ namespace Units
                 if (_cancellationTokenSource.IsCancellationRequested) return;
                 unit.OnTakeDamage(this);
                 Debug.Log($"{unit.Model.Health}");
-
             }
         }
 

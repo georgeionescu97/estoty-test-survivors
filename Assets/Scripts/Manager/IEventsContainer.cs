@@ -12,5 +12,4 @@ namespace Events
         UnityEvent OnChangedEnemyKilled { get; }
         UnityEvent OnLevelUp { get; }
     }
-
 }
